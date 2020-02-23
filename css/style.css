@@ -19,14 +19,17 @@ body {
   position: fixed;
   text-align: right;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 #accueil #titre h1 {
   color: white;
   margin: 0;
   font-size: 45px;
-  z-index: 1;
+}
+
+#accueil h2 {
+  z-index: -1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -45,6 +48,19 @@ body {
   #accueil h1 {
     color: green;
   }
+}
+
+.texteTransition {
+  position: fixed;
+  z-index: -1;
+  top: 40%;
+  left: 20%;
+}
+
+.texteTransition h2 {
+  text-align: center;
+  color: white;
+  font-size: 62px;
 }
 
 #transition {

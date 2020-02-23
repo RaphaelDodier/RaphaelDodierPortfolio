@@ -1,3 +1,17 @@
+.texteTransition{
+    position: fixed;
+    z-index: -1;
+    top: 40%;
+    left: 20%;
+
+    h2{
+        text-align: center;
+        color:white;
+        font-size: 62px;
+    }
+
+}
+
 #transition{
     height: 100%;
     z-index: 1112;
