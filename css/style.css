@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-color: #2F65FF;
+  background-image: linear-gradient(210deg, #29AAE1, #1B1464);
 }
 
 #accueil {
@@ -16,7 +16,6 @@ body {
 }
 
 #accueil #titre {
-  position: fixed;
   text-align: right;
   right: 0;
   z-index: 1;
@@ -32,39 +31,108 @@ body {
   z-index: -1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  #accueil {
-    background-size: 100% 100%;
-  }
-  #accueil h1 {
-    color: green;
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  #accueil #titre h1 {
+    font-size: 65px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #accueil {
-    background-size: 100% 100%;
-  }
-  #accueil h1 {
-    color: green;
+  #accueil #titre h1 {
+    font-size: 85px;
   }
 }
 
-.texteTransition {
+#transition {
+  height: 100%;
+  background-image: linear-gradient(210deg, #29AAE1, #1B1464);
+}
+
+#transition .texteTransition {
   position: fixed;
-  z-index: -1;
-  top: 40%;
-  left: 20%;
+  z-index: 1;
+  top: 30%;
+  left: 0;
 }
 
-.texteTransition h2 {
+#transition .texteTransition h2 {
   text-align: center;
   color: white;
   font-size: 62px;
 }
 
-#transition {
-  height: 100%;
-  z-index: 1112;
+#vague {
+  background-image: url("../img/accueil.png");
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 100%;
+  background-position: 35% 20%;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+#vague .vague {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/vague.png);
+  background-size: 700px 100px;
+}
+
+#vague .vague1 {
+  -webkit-animation: animationVague1 30s linear infinite;
+          animation: animationVague1 30s linear infinite;
+  z-index: 10000;
+  opacity: 1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+#vague .vague2 {
+  -webkit-animation: animationVague1 15s linear infinite;
+          animation: animationVague1 15s linear infinite;
+  z-index: 9999;
+  opacity: 0.5;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+#vague .vague3 {
+  -webkit-animation: animationVague1 30s linear infinite;
+          animation: animationVague1 30s linear infinite;
+  z-index: 9998;
+  opacity: 0.2;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+#vague .vague4 {
+  -webkit-animation: animationVague1 15s linear infinite;
+          animation: animationVague1 15s linear infinite;
+  z-index: 9997;
+  opacity: 0.7;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+@-webkit-keyframes animationVague1 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 700px;
+  }
+}
+
+@keyframes animationVague1 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 700px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

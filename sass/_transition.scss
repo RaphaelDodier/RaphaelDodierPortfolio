@@ -1,8 +1,14 @@
-.texteTransition{
+
+
+#transition{
+ height: 100%;
+ background-image: linear-gradient(210deg,#29AAE1,#1B1464);
+
+ .texteTransition{
     position: fixed;
-    z-index: -1;
-    top: 40%;
-    left: 20%;
+    z-index: 1;
+    top: 30%;
+    left: 0;
 
     h2{
         text-align: center;
@@ -11,9 +17,4 @@
     }
 
 }
-
-#transition{
-    height: 100%;
-    z-index: 1112;
-
 }
