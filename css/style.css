@@ -44,21 +44,44 @@ body {
 }
 
 #transition {
-  height: 100%;
   background-image: linear-gradient(210deg, #29AAE1, #1B1464);
 }
 
 #transition .texteTransition {
-  position: fixed;
-  z-index: 1;
-  top: 30%;
-  left: 0;
+  margin-bottom: 1000px;
 }
 
-#transition .texteTransition h2 {
+#transition .apropos {
+  background: url(../img/papierJaune.png);
+  height: 100%;
+  background-repeat: round;
+  background-size: 200% 8%;
+  width: 96%;
+  margin: 0 auto;
+}
+
+#transition .apropos img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  border: white 8px solid;
+}
+
+#transition .apropos #nom h3 {
   text-align: center;
-  color: white;
-  font-size: 62px;
+  font-size: 36px;
+  margin: 2px;
+  color: black;
+  text-shadow: 1px 1px #fff;
+}
+
+#transition .apropos #description {
+  background-color: #ecdf9b;
+  border-top: #7c6d22 30px solid;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 10px 10px 10px;
 }
 
 #vague {
