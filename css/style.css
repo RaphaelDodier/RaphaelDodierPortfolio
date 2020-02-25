@@ -22,15 +22,44 @@ body {
 }
 
 #accueil {
-  background-image: url("../img/accueil.png");
   background-repeat: no-repeat;
   height: 100%;
   background-position: 35% 20%;
   background-attachment: fixed;
 }
 
-#accueil #conteneurnuage {
+#accueil #conteneurNuage {
   display: none;
+}
+
+#accueil #etoileFilante {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  -webkit-animation-name: etoileAnimation;
+          animation-name: etoileAnimation;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+#accueil #etoileFilante::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 100px;
+  width: 1px;
+  right: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.4)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
 }
 
 #accueil #titre {
@@ -47,6 +76,8 @@ body {
   margin: 0;
   font-size: 45px;
   text-shadow: 2px 2px 2px #000;
+  -webkit-animation: titreOpacity 1s linear forwards;
+          animation: titreOpacity 1s linear forwards;
 }
 
 #accueil #descriptionCourte {
@@ -61,6 +92,8 @@ body {
   margin: 0;
   font-size: 25px;
   text-shadow: 2px 2px 2px #000;
+  -webkit-animation: titreOpacity 1s linear forwards;
+          animation: titreOpacity 1s linear forwards;
 }
 
 #accueil h2 {
@@ -142,6 +175,50 @@ body {
       -webkit-transform: translateX(-15%);
               transform: translateX(-15%);
     }
+  }
+}
+
+@-webkit-keyframes titreOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes titreOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes etoileAnimation {
+  0% {
+    top: -100px;
+    right: 47%;
+    opacity: 1;
+  }
+  2%, 100% {
+    top: 25%;
+    right: 65%;
+    opacity: 0;
+  }
+}
+
+@keyframes etoileAnimation {
+  0% {
+    top: -100px;
+    right: 47%;
+    opacity: 1;
+  }
+  2%, 100% {
+    top: 25%;
+    right: 65%;
+    opacity: 0;
   }
 }
 
