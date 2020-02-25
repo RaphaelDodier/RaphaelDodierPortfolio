@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-family: 'Glegoo';
+}
+
 .apropos {
   font-family: 'Kalam';
 }
@@ -25,6 +29,10 @@ body {
   background-attachment: fixed;
 }
 
+#accueil #conteneurnuage {
+  display: none;
+}
+
 #accueil #titre {
   position: absolute;
   text-align: right;
@@ -38,6 +46,21 @@ body {
   color: white;
   margin: 0;
   font-size: 45px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#accueil #descriptionCourte {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-transform: capitalize;
+}
+
+#accueil #descriptionCourte h1 {
+  color: white;
+  margin: 0;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px #000;
 }
 
 #accueil h2 {
@@ -51,8 +74,74 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+  #accueil {
+    overflow: hidden;
+  }
+  #accueil #conteneurNuage {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  #accueil #conteneurNuage .nuage {
+    background-image: url(../img/nuage.png);
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 200px 50px;
+    top: 0;
+  }
+  #accueil #conteneurNuage .nuage1 {
+    -webkit-animation: animationNuage 80s linear infinite;
+            animation: animationNuage 80s linear infinite;
+  }
+  #accueil #conteneurNuage .nuage2 {
+    -webkit-animation: animationNuage 140s linear infinite;
+            animation: animationNuage 140s linear infinite;
+    top: 30px;
+    -webkit-animation-delay: -20s;
+            animation-delay: -20s;
+    opacity: 0.8;
+  }
+  #accueil #conteneurNuage .nuage3 {
+    -webkit-animation: animationNuage 250s linear infinite;
+            animation: animationNuage 250s linear infinite;
+    top: 20px;
+    -webkit-animation-delay: -210s;
+            animation-delay: -210s;
+    opacity: 0.9;
+  }
+  #accueil #conteneurNuage .nuage4 {
+    -webkit-animation: animationNuage 300s linear infinite;
+            animation: animationNuage 300s linear infinite;
+    top: 50px;
+    opacity: 0.6;
+  }
+  #accueil #titre {
+    right: 50px;
+    top: 100px;
+  }
   #accueil #titre h1 {
     font-size: 85px;
+  }
+  @-webkit-keyframes animationNuage {
+    0% {
+      -webkit-transform: translateX(110%);
+              transform: translateX(110%);
+    }
+    100% {
+      -webkit-transform: translateX(-15%);
+              transform: translateX(-15%);
+    }
+  }
+  @keyframes animationNuage {
+    0% {
+      -webkit-transform: translateX(110%);
+              transform: translateX(110%);
+    }
+    100% {
+      -webkit-transform: translateX(-15%);
+              transform: translateX(-15%);
+    }
   }
 }
 
@@ -61,7 +150,16 @@ body {
 }
 
 #transition .texteTransition {
-  margin-bottom: 500px;
+  position: fixed;
+  z-index: -1;
+  top: 30%;
+  left: 0;
+}
+
+#transition .texteTransition h2 {
+  text-align: center;
+  color: white;
+  font-size: 55px;
 }
 
 #transition .apropos {
@@ -71,7 +169,7 @@ body {
   background-repeat: round;
   background-size: 200% 8%;
   width: 96%;
-  margin: 0 auto;
+  margin: 500px auto 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -100,7 +198,7 @@ body {
   background-color: #e9d46c;
   border-top: #eed453 30px solid;
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto 40px auto;
   padding: 0 10px 10px 10px;
   -webkit-box-shadow: 2px 20px 10px #000000;
           box-shadow: 2px 20px 10px #000000;
@@ -110,6 +208,12 @@ body {
 
 #transition .apropos #description h3 {
   font-weight: 400;
+}
+
+#transition .apropos #competences h4 {
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 #transition .apropos #competences #languages {
@@ -272,5 +376,15 @@ footer {
 footer h2 {
   margin-top: 0;
   font-size: 48px;
+  text-decoration: underline;
+}
+
+footer h5 {
+  font-size: 24px;
+}
+
+footer h5:first-child a {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

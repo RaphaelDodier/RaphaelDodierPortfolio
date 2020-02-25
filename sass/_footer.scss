@@ -5,5 +5,15 @@ footer{
     h2{
         margin-top:0;
         font-size: 48px;
+       text-decoration: underline;
+    }
+    h5{
+        font-size: 24px;
+    }
+    h5:first-child{
+        a{
+            color: white;
+        text-decoration: none;
+        }
     }
 }
