@@ -28,5 +28,11 @@ window.addEventListener("scroll", cacheTexte , false);
 function cacheTexte(){
     var d = document;
     var texte = d.getElementById("texteBackGround");
+    var bulles = d.getElementsByClassName("bulle");
     this.scrollY > 1200 ? texte.style.opacity = .0 : texte.style.opacity = 1;
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
+        for(var i = 0; i<10;i++){
+            bulles[i].classList.add('bulle'+i);
+        }
+    }
 }

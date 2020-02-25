@@ -19,6 +19,7 @@ body {
 
 body {
   background: linear-gradient(210deg, #29AAE1, #1B1464) fixed;
+  overflow-x: hidden;
 }
 
 #accueil {
@@ -248,7 +249,7 @@ body {
   height: 100%;
   background-repeat: round;
   width: 96%;
-  margin: 500px auto 0 auto;
+  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -364,7 +365,7 @@ body {
     height: 100%;
     background-repeat: round;
     width: 40%;
-    margin: 500px 0 0 20px;
+    margin: 0 auto;
     position: relative;
   }
   #transition .apropos .profil {
@@ -385,8 +386,134 @@ body {
   }
   #transition .apropos #description {
     width: 45%;
+    min-width: 250px;
+    max-width: 270px;
     right: 0;
     top: 16%;
+  }
+}
+
+#bulles {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+}
+
+#bulles .bulle {
+  background-image: url("../img/bulle.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+#bulles .bulle1 {
+  height: 100px;
+  background-size: 100px 100px;
+  -webkit-animation: animationBulle 0.5s ease-in forwards;
+          animation: animationBulle 0.5s ease-in forwards;
+  left: 10%;
+}
+
+#bulles .bulle2 {
+  height: 200px;
+  background-size: 200px 200px;
+  -webkit-animation: animationBulle 1s ease-in forwards;
+          animation: animationBulle 1s ease-in forwards;
+  left: 0;
+}
+
+#bulles .bulle3 {
+  height: 75px;
+  background-size: 75px 75px;
+  -webkit-animation: animationBulle 2s ease-in forwards;
+          animation: animationBulle 2s ease-in forwards;
+  left: 90%;
+}
+
+#bulles .bulle4 {
+  height: 400px;
+  background-size: 400px 400px;
+  -webkit-animation: animationBulle 1.5s ease-in forwards;
+          animation: animationBulle 1.5s ease-in forwards;
+  left: 80%;
+}
+
+#bulles .bulle5 {
+  height: 50px;
+  background-size: 50px 50px;
+  -webkit-animation: animationBulle 1s ease-in forwards;
+          animation: animationBulle 1s ease-in forwards;
+  left: 60%;
+}
+
+#bulles .bulle6 {
+  height: 100px;
+  background-size: 100px 100px;
+  -webkit-animation: animationBulle .5s ease-in forwards;
+          animation: animationBulle .5s ease-in forwards;
+  left: 40%;
+}
+
+#bulles .bulle7 {
+  height: 200px;
+  background-size: 200px 200px;
+  -webkit-animation: animationBulle 2s ease-in forwards;
+          animation: animationBulle 2s ease-in forwards;
+  left: 50%;
+}
+
+#bulles .bulle8 {
+  height: 75px;
+  background-size: 75px 75px;
+  -webkit-animation: animationBulle 1.5s ease-in forwards;
+          animation: animationBulle 1.5s ease-in forwards;
+  left: 30%;
+}
+
+#bulles .bulle9 {
+  height: 100px;
+  background-size: 100px 100px;
+  -webkit-animation: animationBulle 1s ease-in forwards;
+          animation: animationBulle 1s ease-in forwards;
+  left: 20%;
+}
+
+#bulles .bulle10 {
+  height: 50px;
+  background-size: 50px 50px;
+  -webkit-animation: animationBulle .5s ease-in forwards;
+          animation: animationBulle .5s ease-in forwards;
+  left: 10%;
+}
+
+@-webkit-keyframes animationBulle {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  90% {
+    bottom: 90%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes animationBulle {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  90% {
+    bottom: 90%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
   }
 }
 
