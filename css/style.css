@@ -244,7 +244,6 @@ body {
   border-radius: 20px;
   height: 100%;
   background-repeat: round;
-  background-size: 200% 8%;
   width: 96%;
   margin: 500px auto 0 auto;
   padding-top: 30px;
@@ -253,8 +252,8 @@ body {
 
 #transition .apropos img {
   display: block;
-  width: 50%;
   height: auto;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -348,6 +347,44 @@ body {
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   margin: 20px auto;
+}
+
+@media only screen and (min-width: 992px) {
+  #transition .texteTransition {
+    left: 28%;
+  }
+  #transition .texteTransition h2 {
+    font-size: 75px;
+  }
+  #transition .apropos {
+    border-radius: 20px;
+    height: 100%;
+    background-repeat: round;
+    width: 40%;
+    margin: 500px 0 0 20px;
+    position: relative;
+  }
+  #transition .apropos .profil {
+    width: 33%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  #transition .apropos #nom {
+    padding-bottom: 100px;
+  }
+  #transition .apropos #nom h3 {
+    text-align: left;
+    font-size: 46px;
+    margin: 0 0 0 10%;
+  }
+  #transition .apropos #description {
+    width: 45%;
+    right: 0;
+    top: 16%;
+  }
 }
 
 #vague {

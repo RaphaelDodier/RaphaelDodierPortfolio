@@ -23,12 +23,8 @@ padding-bottom: 80px;
         .apropos{
             background: url(../img/papierJaune.png);
             border-radius: 20px;
-            // filter: blur(3px);
-            // height: 1000px;
             height: 100%;
-            // background-size: 90% 3%;
             background-repeat: round;
-            background-size: 200% 8%;
             width: 96%;
             margin: 500px auto 0 auto;
             padding-top: 30px;
@@ -36,14 +32,14 @@ padding-bottom: 80px;
 
             img{
                 display: block;
-                width: 50%;
                 height: auto;
+                width: 50%;
                 margin: 0 auto;
                     
             }
 
             .profil{
-                border: white 8px solid; 
+                border: white 8px solid;
             }
             #nom{
                 h3{
@@ -138,4 +134,65 @@ padding-bottom: 80px;
     //     background-repeat: round;
     //     margin: 0 auto;
     // }
+}
+
+
+@media only screen and (min-width: 992px){
+    #transition{
+        .texteTransition{
+            left: 28%;
+            h2{
+                font-size: 75px;
+            }
+        
+        }
+
+
+
+        .apropos{
+            border-radius: 20px;
+            // filter: blur(3px);
+            // height: 1000px;
+            height: 100%;
+            // background-size: 90% 3%;
+            background-repeat: round;
+            width: 40%;
+            margin: 500px 0 0 20px;
+            position: relative;
+
+            img{
+                // display: block;
+                // width: 50%;
+                // height: auto;
+                // margin: 0 auto;      
+            }
+
+            .profil{
+                width: 33%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: rotate(-10deg);
+            }
+
+            #nom{
+                h3{
+                    text-align: left;
+                    font-size: 46px;
+                    margin: 0 0 0 10%;
+                }
+                padding-bottom: 100px;
+            }
+
+
+            #description{
+                width: 45%;
+                // position: absolute;
+                right: 0;
+                top: 16%;
+            }
+
+        }
+
+    }
 }
