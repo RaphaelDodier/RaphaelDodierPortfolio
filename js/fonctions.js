@@ -18,3 +18,15 @@ function accueilImage(heure){
         nuage.style.display = "none";
     }
 }
+
+
+
+
+
+window.addEventListener("scroll", cacheTexte , false);
+
+function cacheTexte(){
+    var d = document;
+    var texte = d.getElementById("texteBackGround");
+    this.scrollY > 1200 ? texte.style.opacity = .0 : texte.style.opacity = 1;
+}

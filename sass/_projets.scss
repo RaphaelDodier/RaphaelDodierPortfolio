@@ -15,9 +15,9 @@
         background-repeat: no-repeat;
         margin: 0 auto;
     }
-    #slides{
+    // #slides{
 
-    }
+    // }
 
 //     #slides {
 //         width: 100%;
@@ -49,4 +49,13 @@
 //     }
 
 
+}
+
+@media only screen and (min-width: 992px){
+    #projet{
+        h1{
+            text-align: center;
+            font-size: 60px;
+        }
+    }
 }

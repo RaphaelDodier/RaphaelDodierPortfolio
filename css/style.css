@@ -237,6 +237,9 @@ body {
   text-align: center;
   color: white;
   font-size: 55px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 #transition .apropos {
@@ -481,6 +484,13 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 992px) {
+  #projet h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
 footer {
   background-color: #020016;
   color: white;
@@ -494,11 +504,17 @@ footer h2 {
 }
 
 footer h5 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 footer h5:first-child a {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  footer h5 {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
