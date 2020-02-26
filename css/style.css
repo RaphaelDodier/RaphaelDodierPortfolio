@@ -19,7 +19,6 @@ body {
 
 body {
   background: linear-gradient(210deg, #29AAE1, #1B1464) fixed;
-  overflow-x: hidden;
 }
 
 a {
@@ -490,6 +489,86 @@ a {
   -webkit-animation: animationBulle .5s ease-in forwards;
           animation: animationBulle .5s ease-in forwards;
   left: 10%;
+}
+
+#bulles .bulle11 {
+  height: 100px;
+  background-size: 100px 100px;
+  -webkit-animation: animationBulle 0.5s ease-in forwards;
+          animation: animationBulle 0.5s ease-in forwards;
+  left: 95%;
+}
+
+#bulles .bulle12 {
+  height: 220px;
+  background-size: 220px 220px;
+  -webkit-animation: animationBulle 1s ease-in forwards;
+          animation: animationBulle 1s ease-in forwards;
+  left: 100%;
+}
+
+#bulles .bulle13 {
+  height: 275px;
+  background-size: 275px 275px;
+  -webkit-animation: animationBulle 2s ease-in forwards;
+          animation: animationBulle 2s ease-in forwards;
+  left: 15%;
+}
+
+#bulles .bulle14 {
+  height: 125px;
+  background-size: 125px 125px;
+  -webkit-animation: animationBulle 1.5s ease-in forwards;
+          animation: animationBulle 1.5s ease-in forwards;
+  left: 25%;
+}
+
+#bulles .bulle15 {
+  height: 350px;
+  background-size: 350px 350px;
+  -webkit-animation: animationBulle 1s ease-in forwards;
+          animation: animationBulle 1s ease-in forwards;
+  left: 45%;
+}
+
+#bulles .bulle16 {
+  height: 25px;
+  background-size: 25px 25px;
+  -webkit-animation: animationBulle .5s ease-in forwards;
+          animation: animationBulle .5s ease-in forwards;
+  left: 65%;
+}
+
+#bulles .bulle17 {
+  height: 100px;
+  background-size: 100px 100px;
+  -webkit-animation: animationBulle 2s ease-in forwards;
+          animation: animationBulle 2s ease-in forwards;
+  left: 5%;
+}
+
+#bulles .bulle18 {
+  height: 225px;
+  background-size: 225px 225px;
+  -webkit-animation: animationBulle 1.5s ease-in forwards;
+          animation: animationBulle 1.5s ease-in forwards;
+  left: 75%;
+}
+
+#bulles .bulle19 {
+  height: 300px;
+  background-size: 300px 300px;
+  -webkit-animation: animationBulle 1s ease-in forwards;
+          animation: animationBulle 1s ease-in forwards;
+  left: 85%;
+}
+
+#bulles .bulle20 {
+  height: 350px;
+  background-size: 350px 350px;
+  -webkit-animation: animationBulle .5s ease-in forwards;
+          animation: animationBulle .5s ease-in forwards;
+  left: 95%;
 }
 
 @-webkit-keyframes animationBulle {

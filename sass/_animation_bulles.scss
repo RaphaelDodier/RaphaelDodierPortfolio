@@ -80,6 +80,76 @@
         animation: animationBulle .5s ease-in forwards;
         left: 10%;
     }
+    .bulle11{
+        height: 100px;
+        background-size: 100px 100px;
+        animation: animationBulle 0.5s ease-in forwards;
+        left: 95%;
+        
+    }
+
+    .bulle12{
+        height: 220px;
+        background-size: 220px 220px;
+        animation: animationBulle 1s ease-in forwards;
+        left: 100%;   
+    }
+
+    .bulle13{
+        height: 275px;
+        background-size: 275px 275px;
+        animation: animationBulle 2s ease-in forwards;
+        left: 15%;
+    }
+
+    .bulle14{
+        height: 125px;
+        background-size: 125px 125px;
+        animation: animationBulle 1.5s ease-in forwards;
+        left: 25%;
+    }
+
+    .bulle15{
+        height: 350px;
+        background-size: 350px 350px;
+        animation: animationBulle 1s ease-in forwards;
+        left: 45%;
+    }
+
+    .bulle16{
+        height: 25px;
+        background-size: 25px 25px;
+        animation: animationBulle .5s ease-in forwards;
+        left: 65%;
+    }
+
+    .bulle17{
+        height: 100px;
+        background-size: 100px 100px;
+        animation: animationBulle 2s ease-in forwards;
+        left: 5%;
+    }
+
+    .bulle18{
+        height: 225px;
+        background-size: 225px 225px;
+        animation: animationBulle 1.5s ease-in forwards;
+        left: 75%;
+    }
+
+    .bulle19{
+        height: 300px;
+        background-size: 300px 300px;
+        animation: animationBulle 1s ease-in forwards;
+        left: 85%;
+    }
+
+    .bulle20{
+        height: 350px;
+        background-size: 350px 350px;
+        animation: animationBulle .5s ease-in forwards;
+        left: 95%;
+    }
 }
 
 @keyframes animationBulle{

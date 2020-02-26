@@ -30,9 +30,15 @@ function cacheTexte(){
     var texte = d.getElementById("texteBackGround");
     var bulles = d.getElementsByClassName("bulle");
     this.scrollY > 1200 ? texte.style.opacity = .0 : texte.style.opacity = 1;
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
-        for(var i = 0; i<10;i++){
+    if ((document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) && (document.body.scrollTop < 800 || document.documentElement.scrollTop < 800)){
+        for(var i = 0; i<20;i++){
             bulles[i].classList.add('bulle'+i);
         }
     }
+    // if ((document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) || (document.body.scrollTop < 800 || document.documentElement.scrollTop < 800)){
+    //     for(var i = 0; i<20;i++){
+    //         bulles[i].classList.add('bulle'+i);
+    //         console.log("aaaEUY");
+    //     }
+    // }
 }
