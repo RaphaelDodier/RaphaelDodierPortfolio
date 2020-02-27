@@ -15,10 +15,8 @@ html {
 body {
   height: 100%;
   width: 100%;
-}
-
-body {
   background: linear-gradient(210deg, #29AAE1, #1B1464) fixed;
+  overflow-x: hidden;
 }
 
 a {
@@ -122,10 +120,10 @@ a {
   }
   #accueil #conteneurNuage .nuage {
     background-image: url(../img/nuage.png);
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 200px 50px;
+    background-size: 160px 60px;
     top: 0;
   }
   #accueil #conteneurNuage .nuage1 {
@@ -133,8 +131,8 @@ a {
             animation: animationNuage 80s linear infinite;
   }
   #accueil #conteneurNuage .nuage2 {
-    -webkit-animation: animationNuage 140s linear infinite;
-            animation: animationNuage 140s linear infinite;
+    -webkit-animation: animationNuage 90s linear infinite;
+            animation: animationNuage 90s linear infinite;
     top: 30px;
     -webkit-animation-delay: -20s;
             animation-delay: -20s;
@@ -232,10 +230,8 @@ a {
 }
 
 #transition .texteTransition {
-  position: fixed;
+  position: initial;
   z-index: -1;
-  top: 30%;
-  left: 0;
 }
 
 #transition .texteTransition h2 {
@@ -315,25 +311,13 @@ a {
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 3px solid black;
   width: 30%;
   margin: 5px auto;
 }
 
 #transition .apropos #competences #languages p:hover {
   font-weight: 700;
-  background-color: #fde675;
   cursor: default;
-}
-
-#transition .apropos #competences #logicielsIntegration {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[1];
-      grid-template-rows: repeat(1, 1fr);
-  margin: 20px auto;
 }
 
 #transition .apropos #competences #logicielsCréation {
@@ -357,9 +341,31 @@ a {
   margin: 20px auto;
 }
 
+#transition .apropos #competences #logicielsJeux img:nth-child(2) {
+  background-color: #fde675;
+  border-radius: 50%;
+}
+
+#transition .apropos #competences #logicielsIntegration {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  margin: 20px auto;
+}
+
+#transition .apropos #competences #logicielsIntegration img:nth-child(2) {
+  background-color: #fde675;
+  border-radius: 50%;
+}
+
 @media only screen and (min-width: 992px) {
   #transition .texteTransition {
+    position: fixed;
     left: 28%;
+    top: 30%;
   }
   #transition .texteTransition h2 {
     font-size: 75px;
@@ -401,6 +407,7 @@ a {
   position: relative;
   height: 1000px;
   width: 100%;
+  display: none;
 }
 
 #bulles .bulle {
@@ -598,6 +605,12 @@ a {
   100% {
     bottom: 100%;
     opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #bulles {
+    display: block;
   }
 }
 

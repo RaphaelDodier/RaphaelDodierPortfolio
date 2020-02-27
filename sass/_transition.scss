@@ -5,10 +5,10 @@
 //  background-image: linear-gradient(210deg,#29AAE1,#1B1464);
 padding-bottom: 80px;
  .texteTransition{
-    position: fixed;
+    position: initial;
     z-index: -1;
-    top: 30%;
-    left: 0;
+    // top: 30%;
+    // left: 0;
     
 
     h2{
@@ -90,23 +90,14 @@ padding-bottom: 80px;
                         font-size: 22px;
                         text-transform: uppercase;
                         text-align: center;
-                        border-bottom: 3px solid black;
                         width: 30%;
                         margin: 5px auto;
 
                         &:hover{
                             font-weight: 700;
-                            background-color: #fde675;
                             cursor: default;
                         }
                     }
-                }
-
-                #logicielsIntegration{
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(1, 1fr);
-                    margin: 20px auto;
                 }
 
                 #logicielsCréation{
@@ -122,6 +113,21 @@ padding-bottom: 80px;
                     grid-template-columns: repeat(3, 1fr);
                     grid-template-rows: repeat(1, 1fr);
                     margin: 20px auto;
+                    img:nth-child(2){
+                        background-color: #fde675;
+                        border-radius: 50%;
+                    }
+                }
+
+                #logicielsIntegration{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(1, 1fr);
+                    margin: 20px auto;
+                    img:nth-child(2){
+                        background-color: #fde675;
+                        border-radius: 50%;
+                    }
                 }
             }
 
@@ -142,7 +148,9 @@ padding-bottom: 80px;
 @media only screen and (min-width: 992px){
     #transition{
         .texteTransition{
+            position: fixed;
             left: 28%;
+            top: 30%;
             h2{
                 font-size: 75px;
             }
