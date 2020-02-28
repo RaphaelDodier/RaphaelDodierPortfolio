@@ -370,11 +370,12 @@ a {
 @media only screen and (min-width: 992px) {
   #transition .texteTransition {
     position: fixed;
-    left: 28%;
     top: 30%;
+    width: 100%;
   }
   #transition .texteTransition h2 {
     font-size: 75px;
+    text-align: center;
   }
   #transition .apropos {
     border-radius: 20px;
@@ -696,7 +697,6 @@ a {
 }
 
 #projet {
-  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#020016));
   background: linear-gradient(rgba(0, 0, 0, 0), #020016);
 }
@@ -707,7 +707,6 @@ a {
 
 #projet #projets {
   width: 90%;
-  height: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,6 +719,30 @@ a {
 
 #projet #projets .sous-marin {
   background-image: url(../img/projet/sous-marin.jpg);
+  padding-top: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#projet #projets .gogor {
+  background-image: url(../img/projet/perso.jpg);
+  padding-top: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#projet #projets .casque {
+  background-image: url(../img/projet/casque.png);
+  padding-top: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#projet #projets .serpent {
+  background-image: url(../img/projet/serpent.jpg);
   padding-top: 100%;
   background-size: contain;
   background-repeat: no-repeat;

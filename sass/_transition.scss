@@ -154,10 +154,12 @@ padding-bottom: 80px;
     #transition{
         .texteTransition{
             position: fixed;
-            left: 28%;
+            // left: 28%;
             top: 30%;
+            width: 100%;
             h2{
                 font-size: 75px;
+                text-align: center;
             }
         
         }
@@ -176,12 +178,6 @@ padding-bottom: 80px;
             margin: 0 auto;
             position: relative;
 
-            img{
-                // display: block;
-                // width: 50%;
-                // height: auto;
-                // margin: 0 auto;      
-            }
 
             .profil{
                 width: 33%;
