@@ -17,6 +17,7 @@ padding-bottom: 80px;
         font-size: 55px;
         opacity: 0;
         transition: 0.2s opacity;
+        margin: 150px 0;
     }
 
 }
@@ -127,6 +128,10 @@ padding-bottom: 80px;
                     img:nth-child(2){
                         background-color: #fde675;
                         border-radius: 50%;
+                    }
+                    img:nth-child(3){
+                        border: 5px solid black;
+                        border-radius: 20%;
                     }
                 }
             }
