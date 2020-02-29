@@ -12,42 +12,36 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-     *{
-        //  margin-bottom: 30px;
-     }
-    .sous-marin{
-        background-image: url(../img/projet/sous-marin.jpg);
-        padding-top: 100%;
-        // width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        // margin: 0 auto;
+    div{
+        position: relative;
+        img{
+            width: 100%;
+            border: rgba(0,0,0,0) 1vw solid;
+            transition: border 1s;
+            
+        }
+        i{
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            color: white;
+            font-size: 20vw;
+            opacity: 0.4;
+            transition: opacity 1s;
+        }
+    }
+    div:hover{
+        cursor: pointer;
+    }
+    div:hover i{
+        opacity: 0.8;
+    }
+    div:hover img{
+        border: 1vw white solid;
     }
 
-    .gogor{
-        background-image: url(../img/projet/perso.jpg);
-        padding-top: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    
 
-    .casque{
-        background-image: url(../img/projet/casque.png);
-        padding-top: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .serpent{
-        background-image: url(../img/projet/serpent.jpg);
-        padding-top: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
     iframe{
         width: 100%;

@@ -717,36 +717,38 @@ a {
           flex-direction: column;
 }
 
-#projet #projets .sous-marin {
-  background-image: url(../img/projet/sous-marin.jpg);
-  padding-top: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+#projet #projets div {
+  position: relative;
 }
 
-#projet #projets .gogor {
-  background-image: url(../img/projet/perso.jpg);
-  padding-top: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+#projet #projets div img {
+  width: 100%;
+  border: rgba(0, 0, 0, 0) 1vw solid;
+  -webkit-transition: border 1s;
+  transition: border 1s;
 }
 
-#projet #projets .casque {
-  background-image: url(../img/projet/casque.png);
-  padding-top: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+#projet #projets div i {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+  font-size: 20vw;
+  opacity: 0.4;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
-#projet #projets .serpent {
-  background-image: url(../img/projet/serpent.jpg);
-  padding-top: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+#projet #projets div:hover {
+  cursor: pointer;
+}
+
+#projet #projets div:hover i {
+  opacity: 0.8;
+}
+
+#projet #projets div:hover img {
+  border: 1vw white solid;
 }
 
 #projet #projets iframe {

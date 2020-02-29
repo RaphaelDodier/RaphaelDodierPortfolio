@@ -42,3 +42,11 @@ function cacheTexte(){
     //     }
     // }
 }
+
+
+
+function apparaitInfo(){
+    // var d = document;
+    // var img = d.getElementsByClassName("3d");
+    alert("YESS");
+}
