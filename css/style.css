@@ -755,6 +755,72 @@ a {
   width: 100%;
 }
 
+#info {
+  position: fixed;
+  height: 90%;
+  width: 95%;
+  background-image: linear-gradient(210deg, #29AAE1, #1B1464);
+  left: 2.5%;
+  bottom: 5%;
+  z-index: 20000;
+  border: 3px white solid;
+  color: white;
+  border-radius: 20px;
+}
+
+#info #conteneurVideo {
+  max-width: 433px;
+  max-height: 244px;
+  position: relative;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  padding-bottom: 56.25%;
+  /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+#info #conteneurVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  max-height: 244px;
+}
+
+#info h1 {
+  font-style: italic;
+}
+
+#info p {
+  background-color: #8cdbf5;
+  width: 80%;
+  color: black;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 20px;
+  max-width: 420px;
+}
+
+#info img {
+  width: 20%;
+}
+
+#filtre {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0.6;
+  z-index: 19999;
+}
+
+@media only screen and (min-width: 550px) {
+  #info #conteneurVideo {
+    padding-bottom: 292px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   #projet h1 {
     text-align: center;
