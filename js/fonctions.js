@@ -46,7 +46,11 @@ function cacheTexte(){
 
 
 function apparaitInfo(){
-    // var d = document;
-    // var img = d.getElementsByClassName("3d");
-    alert("YESS");
+    var d = document;
+
+    var info = d.getElementsByClassName("info")[0];
+    info.classList.toggle("infoActif");
+
+    var filtre = d.getElementsByClassName("filtre")[0];
+    filtre.classList.toggle("filtreActif");
 }

@@ -755,30 +755,51 @@ a {
   width: 100%;
 }
 
-#info {
+.info {
   position: fixed;
   height: 90%;
   width: 95%;
   background-image: linear-gradient(210deg, #29AAE1, #1B1464);
   left: 2.5%;
-  bottom: 5%;
+  bottom: 2.5%;
   z-index: 20000;
   border: 3px white solid;
   color: white;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-#info #conteneurVideo {
+.info i {
+  font-size: 30px;
+  position: absolute;
+  top: -5%;
+  right: 0;
+  cursor: pointer;
+}
+
+.info #conteneurVideo {
   max-width: 433px;
   max-height: 244px;
   position: relative;
   width: 90%;
   margin: 20px auto 0 auto;
-  padding-bottom: 56.25%;
+  padding-bottom: 292px;
   /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
 }
 
-#info #conteneurVideo iframe {
+.info #conteneurVideo iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -787,11 +808,14 @@ a {
   max-height: 244px;
 }
 
-#info h1 {
+.info h1 {
   font-style: italic;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
 }
 
-#info p {
+.info p {
   background-color: #8cdbf5;
   width: 80%;
   color: black;
@@ -801,11 +825,17 @@ a {
   max-width: 420px;
 }
 
-#info img {
+.info img {
   width: 20%;
+  margin: 20px auto;
 }
 
-#filtre {
+.infoActif {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.filtre {
   background-color: black;
   position: fixed;
   height: 100%;
@@ -813,6 +843,11 @@ a {
   top: 0;
   opacity: 0.6;
   z-index: 19999;
+  display: none;
+}
+
+.filtreActif {
+  display: block;
 }
 
 @media only screen and (min-width: 550px) {
