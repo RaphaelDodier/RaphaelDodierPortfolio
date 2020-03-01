@@ -163,18 +163,17 @@
                 <i class="fas fa-plus"></i>
             </div>
 
-            <div class="mdj web">
+            <!-- <div onclick="apparaitInfo(6)" class="mdj web">
                 <img src="img/projet/mdjz.jpg" alt="mdjz">
                 <i class="fas fa-plus"></i>
-            </div>
+            </div> -->
         </div>
 
 
     </section>
 
-
-    <div class="info">
-        <i onclick="apparaitInfo()" class="fas fa-times"></i>
+    <i onclick="apparaitInfo()" class="fas fa-times fermer"></i>
+    <div class="info">  
         <div id="conteneurVideo">
             <iframe id="vidYoutube"
             allowfullscreen="allowfullscreen"
@@ -184,9 +183,20 @@
             webkitallowfullscreen="webkitallowfullscreen">>
             </iframe> 
         </div>
-        <h1 id="titreProjet"></h1>
-        <p id="descProjet"></p>
-        <img src="img/creation/maya.png" alt="maya">
+        <div id="conteneurInfo">
+            <h1 id="titreProjet"></h1>
+            <div id="conteneurTexte">
+                <h4 id="equipe"></h4>
+                <p id="descProjet"></p>
+                <p id="role"></p>
+            </div>
+            <h2>Outils/Logiciels utilisés</h2>
+            <div id="conteneurImgProjet">
+                <img id="may" src="img/creation/maya.png" alt="maya">
+                <img id="uni" src="img/jeu/unityBlanc.png" alt="unity">
+                <img id="pha" src="img/jeu/phaser.png" alt="phaser">
+            </div>
+        </div>
     </div>
 
     <div class="filtre"></div>

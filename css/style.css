@@ -759,6 +759,22 @@ a {
   width: 100%;
 }
 
+.fermer {
+  font-size: 30px;
+  position: fixed;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 20000;
+  color: white;
+  -webkit-transform: translateX(1000%);
+          transform: translateX(1000%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
 .info {
   position: fixed;
   height: 90%;
@@ -783,14 +799,13 @@ a {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  overflow-y: scroll;
 }
 
-.info i {
-  font-size: 30px;
-  position: absolute;
-  top: -5%;
-  right: 0;
-  cursor: pointer;
+.info a {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
 }
 
 .info #conteneurVideo {
@@ -819,7 +834,13 @@ a {
   text-align: center;
 }
 
-.info p {
+.info h2 {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.info #conteneurTexte {
   background-color: #8cdbf5;
   width: 80%;
   color: black;
@@ -829,9 +850,24 @@ a {
   max-width: 420px;
 }
 
-.info img {
+.info #conteneurTexte h4 {
+  font-size: 20px;
+}
+
+.info #conteneurImgProjet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#020016));
+  background: linear-gradient(rgba(0, 0, 0, 0), #020016);
+}
+
+.info #conteneurImgProjet img {
   width: 20%;
-  margin: 20px auto;
+  margin: 20px 10px;
 }
 
 .infoActif {
@@ -854,6 +890,10 @@ a {
   display: block;
 }
 
+.bloqueOverflow {
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 550px) {
   #info #conteneurVideo {
     padding-bottom: 292px;
@@ -864,6 +904,65 @@ a {
   #projet h1 {
     text-align: center;
     font-size: 60px;
+  }
+  #projet #projets {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 0 3%;
+  }
+  #projet #projets div i {
+    top: 30%;
+    left: 42%;
+    color: white;
+    font-size: 10vw;
+    opacity: 0.4;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+  .info {
+    width: 87%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    left: 6.5%;
+  }
+  .info #conteneurVideo {
+    margin-top: 15%;
+    margin-left: 2%;
+    width: 500px;
+    height: 281px;
+  }
+  .info #conteneurVideo iframe {
+    width: 500px;
+    height: 281px;
+  }
+  .info h1 {
+    position: absolute;
+    right: 0%;
+    font-size: 40px;
+  }
+  .info #conteneurInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+    margin-right: 20%;
+  }
+  .info #conteneurInfo #conteneurTexte {
+    margin: 200px auto 0 auto;
+  }
+  .info #conteneurInfo #conteneurImgProjet {
+    background: rgba(0, 0, 0, 0);
   }
 }
 
