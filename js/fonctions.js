@@ -53,7 +53,9 @@ function apparaitInfo(n){
     var descProjet = d.getElementById("descProjet");
     switch(n){
         case 1:
-            
+            vidYoutube.src = "https://www.youtube.com/embed/P5XUpcVGSHk"
+            titreProjet.innerHTML = 'Exoball'
+            descProjet.innerHTML = "Jeu d'équipe 2 contre 2."
         break;
         
         case 2:
@@ -72,6 +74,16 @@ function apparaitInfo(n){
             vidYoutube.src = "https://www.youtube.com/embed/SybA4B-VHPo"
             titreProjet.innerHTML = 'Casque Terread'
             descProjet.innerHTML = "Personnage crée et modélisé dans le cadre d'un cours de 3D, Gogor est un personnage d'allure monstrueuse et simple d'esprit."
+        break;
+        case 5:
+            vidYoutube.src = "https://www.youtube.com/embed/SybA4B-VHPo"
+            titreProjet.innerHTML = 'Serpent à pommes'
+            descProjet.innerHTML = "Jeu créé sur Phaser 3"
+        break;
+        case 6:
+            vidYoutube.src = "https://www.youtube.com/embed/SybA4B-VHPo"
+            titreProjet.innerHTML = 'Maison de jeunes Saint-Léonard'
+            descProjet.innerHTML = "Site web"
         break;
     }
 

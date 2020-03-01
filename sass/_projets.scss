@@ -17,7 +17,7 @@
         img{
             width: 100%;
             border: rgba(0,0,0,0) 1vw solid;
-            transition: border 1s;
+            transition: border 1s, filter 1s;
             
         }
         i{
@@ -38,6 +38,7 @@
     }
     div:hover img{
         border: 1vw white solid;
+        filter: blur(2px);
     }
 
     

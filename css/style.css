@@ -724,8 +724,10 @@ a {
 #projet #projets div img {
   width: 100%;
   border: rgba(0, 0, 0, 0) 1vw solid;
-  -webkit-transition: border 1s;
-  transition: border 1s;
+  -webkit-transition: border 1s, -webkit-filter 1s;
+  transition: border 1s, -webkit-filter 1s;
+  transition: border 1s, filter 1s;
+  transition: border 1s, filter 1s, -webkit-filter 1s;
 }
 
 #projet #projets div i {
@@ -749,6 +751,8 @@ a {
 
 #projet #projets div:hover img {
   border: 1vw white solid;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 #projet #projets iframe {
