@@ -45,8 +45,35 @@ function cacheTexte(){
 
 
 
-function apparaitInfo(){
+function apparaitInfo(n){
     var d = document;
+
+    var vidYoutube = d.getElementById("vidYoutube");
+    var titreProjet = d.getElementById("titreProjet");
+    var descProjet = d.getElementById("descProjet");
+    switch(n){
+        case 1:
+            
+        break;
+        
+        case 2:
+            vidYoutube.src = "https://www.youtube.com/embed/2jL8XWmQlDQ"
+            titreProjet.innerHTML = 'Le "Substream"'
+            descProjet.innerHTML = "Un projet 3D réaliser dans le cadre d'un cours de 3D, le Substream est modélisé pour être un véhicule d'haute vitesse sous l'eau."
+        break;
+
+        case 3:
+            vidYoutube.src = "https://www.youtube.com/embed/6OLN4t8Go2I"
+            titreProjet.innerHTML = 'Gogor'
+            descProjet.innerHTML = "Personnage crée et modélisé dans le cadre d'un cours de 3D, Gogor est un personnage d'allure monstrueuse et simple d'esprit."
+        break;
+
+        case 4:
+            vidYoutube.src = "https://www.youtube.com/embed/SybA4B-VHPo"
+            titreProjet.innerHTML = 'Casque Terread'
+            descProjet.innerHTML = "Personnage crée et modélisé dans le cadre d'un cours de 3D, Gogor est un personnage d'allure monstrueuse et simple d'esprit."
+        break;
+    }
 
     var info = d.getElementsByClassName("info")[0];
     info.classList.toggle("infoActif");

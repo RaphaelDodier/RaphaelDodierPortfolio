@@ -138,25 +138,30 @@
     <section id="projet">
         <h1>Mes projets</h1>
         <div id="projets">
-            <div onclick="apparaitInfo()" class="exoballAffiche 3d">
-                <img src="" alt="">
+            <div onclick="apparaitInfo(1)" class="exoballAffiche 3d">
+                <img src="img/projet/exoball.jpg" alt="exo">
                 <i class="fas fa-plus"></i>
             </div>
-            <div onclick="apparaitInfo()" class="sous-marin 3d">
+
+            <div onclick="apparaitInfo(5)" class="serpent jeu">
+                <img src="img/projet/serpent.jpg" alt="">
+                <i class="fas fa-plus"></i>
+            </div>
+            
+            <div onclick="apparaitInfo(2)" class="sous-marin 3d">
                 <img src="img/projet/sous-marin.jpg" alt="">
                 <i class="fas fa-plus"></i>
             </div>
-            <div onclick="apparaitInfo()" class="gogor 3d">
+            <div onclick="apparaitInfo(3)" class="gogor 3d">
                 <img src="img/projet/perso.jpg" alt="">
                 <i class="fas fa-plus"></i>
             </div>
-            <div onclick="apparaitInfo()" class="casque 3d">
+            <div onclick="apparaitInfo(4)" class="casque 3d">
                 <img src="img/projet/casque.png" alt="">
                 <i class="fas fa-plus"></i>
             </div>
 
-            <div class="exoballJeu jeu"><i class="fas fa-plus"></i></div>
-            <div class="serpent jeu"><i class="fas fa-plus"></i></div>
+
 
             <div class="mdj web"><i class="fas fa-plus"></i></div>
         </div>
@@ -168,16 +173,16 @@
     <div class="info">
         <i onclick="apparaitInfo()" class="fas fa-times"></i>
         <div id="conteneurVideo">
-            <iframe
-            src="https://www.youtube.com/embed/2jL8XWmQlDQ"        allowfullscreen="allowfullscreen"
+            <iframe id="vidYoutube"
+            allowfullscreen="allowfullscreen"
             mozallowfullscreen="mozallowfullscreen" 
             msallowfullscreen="msallowfullscreen" 
             oallowfullscreen="oallowfullscreen" 
             webkitallowfullscreen="webkitallowfullscreen">>
             </iframe> 
         </div>
-        <h1>Le "Substream"</h1>
-        <p>Un projet 3D réaliser dans le cadre d'un cours de 3D, le "Substream" est modélisé pour être un véhicule d'haute vitesse sous l'eau.</p>
+        <h1 id="titreProjet"></h1>
+        <p id="descProjet"></p>
         <img src="img/creation/maya.png" alt="maya">
     </div>
 
